@@ -446,11 +446,39 @@ h2.section-title::after {
   color: var(--dark);
 }
 
+/* Estilo para el número de teléfono */
 .contact-item-simple p {
-  color: var(--dark-gray);
-  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px; /* Espaciado entre números */
 }
 
+/* Estilo para el enlace del portfolio */
+.portfolio-url {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.portfolio-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: var(--transition);
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+
+.portfolio-link:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--primary);
+}
+
+.contact-extra-info {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
 .btn-github {
   background-color: #24292e;
   color: white;
