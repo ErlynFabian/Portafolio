@@ -510,21 +510,6 @@ h2.section-title::after {
   gap: 1.5rem;
 }
 
-.footer-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-links a {
-  color: var(--white);
-  text-decoration: none;
-  transition: var(--transition);
-}
-
-.footer-links a:hover {
-  color: var(--primary);
-}
-
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
