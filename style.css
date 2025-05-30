@@ -437,62 +437,39 @@ h2.section-title::after {
   margin-right: 8px;
 }
 
-/* CV Section */
+/* Reemplaza los estilos actuales del CV con estos */
 .cv-section {
-  padding-top: 0;
+  padding: 5rem 0; /* Igual que las otras secciones */
 }
 
 .cv-card-solo {
-  max-width: 500px;
+  max-width: 500px; /* Mismo ancho máximo que contacto */
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 2rem;
   text-align: center;
   border-top: 4px solid var(--primary);
+  height: auto; /* Altura automática según contenido */
+  min-height: auto; /* Elimina altura mínima fija */
 }
 
-.cv-content-solo {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
+/* Asegurar consistencia con la tarjeta de contacto */
+.contact-card-simple, .cv-card-solo {
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.cv-header-solo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-}
-
-.cv-header-solo i {
-  font-size: 2.8rem;
-  color: var(--primary);
-}
-
-.cv-header-solo h3 {
-  font-size: 1.8rem;
-  color: var(--dark);
-  margin: 0;
-}
-
-.cv-description {
-  color: var(--dark-gray);
-  margin-bottom: 0.5rem;
-}
-
-.cv-actions-solo {
-  display: flex;
-  justify-content: center;
-  gap: 1.2rem;
-  margin-top: 1.5rem;
-}
-
-.btn-cv {
-  min-width: 140px;
-  padding: 0.8rem 1.2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.6rem;
+/* Opcional: Contenedor flexible para igualar alturas si están en fila */
+@media (min-width: 992px) {
+  .cv-contact-container {
+    display: flex;
+    gap: 2rem;
+    align-items: stretch;
+  }
+  
+  .contact-card-simple, .cv-card-solo {
+    flex: 1;
+    min-height: 100%;
+  }
 }
 
 /* Footer */
