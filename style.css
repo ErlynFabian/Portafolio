@@ -119,6 +119,45 @@ h2.section-title::after {
   transform: translateY(-2px);
 }
 
+.btn-cv {
+  min-width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn-cv.btn-primary {
+  background-color: var(--white);
+  color: var(--primary);
+  border: 2px solid var(--white);
+}
+
+.btn-cv.btn-outline {
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn-cv.btn-outline:hover {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.btn-cv i {
+  font-size: 1rem;
+}
+
+.btn-cv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-cv:active {
+  transform: translateY(1px);
+}
+
 /* Navbar */
 .navbar {
   position: fixed;
@@ -437,63 +476,87 @@ h2.section-title::after {
   margin-right: 8px;
 }
 
-/* Reemplaza los estilos actuales del CV con estos */
+.social-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-links a {
+    color: var(--white);
+    font-size: 1.8rem;
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--primary);
+    transform: translateY(-3px);
+}
+
+/* Estilos específicos para la sección CV */
 .cv-section {
-  padding: 5rem 0; /* Igual que las otras secciones */
+  padding: 5rem 0;
 }
 
 .cv-card-solo {
-  max-width: 500px; /* Mismo ancho máximo que contacto */
+  max-width: 500px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   border-top: 4px solid var(--primary);
-  height: auto; /* Altura automática según contenido */
-  min-height: auto; /* Elimina altura mínima fija */
+  height: auto;
 }
 
-/* Asegurar consistencia con la tarjeta de contacto */
-.contact-card-simple, .cv-card-solo {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Opcional: Contenedor flexible para igualar alturas si están en fila */
-@media (min-width: 992px) {
-  .cv-contact-container {
-    display: flex;
-    gap: 2rem;
-    align-items: stretch;
-  }
-  
-  .contact-card-simple, .cv-card-solo {
-    flex: 1;
-    min-height: 100%;
-  }
-}
-
-.cv-card-solo {
-  background: var(--white);
-  border-radius: 12px;
-  box-shadow: var(--shadow);
-  width: 90%;
-  max-width: 500px;
-  margin: 1.5rem auto;
+.cv-content-solo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 1.5rem;
-  transition: var(--transition);
-  border-top: 4px solid var(--primary);
 }
 
-@media (max-width: 576px) {
-  .cv-card-solo {
-    width: 85%;
-    margin: 1rem auto;
-    padding: 1.2rem;
-  }
-  
-  .cv-content-solo {
-    padding: 0;
-  }
+.cv-header-solo {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.cv-header-solo i {
+  font-size: 3rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.cv-description {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--dark-gray);
+}
+
+.cv-actions-solo {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.btn-cv {
+  min-width: 150px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: var(--transition);
+}
+
+.btn-cv i {
+  font-size: 1rem;
+}
+
+.btn-cv:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-cv:active {
+  transform: translateY(1px);
 }
 
 /* Footer */
