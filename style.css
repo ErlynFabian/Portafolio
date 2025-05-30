@@ -472,6 +472,30 @@ h2.section-title::after {
   }
 }
 
+.cv-card-solo {
+  background: var(--white);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  width: 90%;
+  max-width: 500px;
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  transition: var(--transition);
+  border-top: 4px solid var(--primary);
+}
+
+@media (max-width: 576px) {
+  .cv-card-solo {
+    width: 85%;
+    margin: 1rem auto;
+    padding: 1.2rem;
+  }
+  
+  .cv-content-solo {
+    padding: 0;
+  }
+}
+
 /* Footer */
 .footer {
   background-color: var(--dark);
