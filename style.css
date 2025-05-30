@@ -11,6 +11,10 @@
   --transition: all 0.3s ease;
 }
 
+html {
+  touch-action: manipulation;
+}
+
 /* Reset y Estilos Base */
 * {
   margin: 0;
