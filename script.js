@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }, 2000);
 });
 
-// Matrix effect with fixed position
+// Matrix
 const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
 
