@@ -79,7 +79,7 @@ function resizeCanvas() {
 }
 resizeCanvas();
 
-const chars = "ｦｧｨｩｪｫｬｭｮｯｰ01{}[]()<>/*+-=%@#$";
+const chars = "ｦｧｨｩｪｫｬｭｮｯｰｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾄﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ∀∂∃∅∆∇∈∉∋∏∑−∓∗√∝∞∠∧∨∩∪∫∴∼≅≈≠≡≤≥⊂⊃⊆⊇⊕⊗⊥⋅€¥¢£$₿฿ΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩαβγδεζηθικλμνξοπρστυφχψω♔♕♖♗♘♙♚♛♜♝♞♟♠♣♥♦♤♧♢♩♪♫♬♭♮♯01⎈⎉⎊⏣⏤⏥⏦⏧⏨";
 const fontSize = window.innerWidth < 768 ? 16 : 20;
 const columns = Math.floor(window.innerWidth / fontSize);
 const drops = Array(columns).fill(0);
