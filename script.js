@@ -42,6 +42,33 @@ document.addEventListener('DOMContentLoaded', function() {
       navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
     }
   });
+  
+  // Highlight active section in navigation
+  const sections = document.querySelectorAll('section');
+  const navItems = document.querySelectorAll('.nav-links a');
+  
+  function highlightNavItem() {
+    let current = '';
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      
+      if (window.scrollY >= (sectionTop - 200)) {
+        current = section.getAttribute('id');
+      }
+    });
+    
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href') === `#${current}`) {
+        item.classList.add('active');
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', highlightNavItem);
+  highlightNavItem(); // Run on initial load
 });
 
 document.addEventListener('dblclick', function(e) {

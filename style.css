@@ -39,12 +39,12 @@
   
 body {
       margin: 0;
-      background: #ffffff !important; /* Fondo blanco */
+      background: #ffffff !important;
       overflow-x: hidden;
-      color: #333; /* Color de texto oscuro para contraste */
+      color: #333;
     }
     
-    /* CANVAS MATRIX (ajustado para fondo claro) */
+    /* CANVAS MATRIX */
     #matrix {
       opacity: 0.2;
       mix-blend-mode: multiply;
@@ -270,8 +270,14 @@ h2.section-title::after {
   transition: var(--transition);
 }
 
-.nav-links a:hover::after {
+.nav-links a:hover::after,
+.nav-links a.active::after {
   width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .menu-toggle {
@@ -504,7 +510,7 @@ h2.section-title::after {
 /* Estilo para el número de teléfono */
 .contact-item-simple p {
   font-size: 1rem;
-  letter-spacing: 0.5px; /* Espaciado entre números */
+  letter-spacing: 0.5px;
 }
 
 /* Estilo para el enlace del portfolio */
