@@ -43,7 +43,7 @@ Página responsive con diseño limpio para mostrar productos de manera visual.
 - **Email:** erlinvfabian01@gmail.com  
 - **Teléfono:** 829-563-3977  
 - **Ubicación:** Santo Domingo Norte  
--[GitHub](https://github.com/erlynvalerio)
+-[GitHub](https://github.com/ErlynFabian)
 
 ---
 
