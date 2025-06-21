@@ -13,7 +13,6 @@ function initializeApp() {
   setupNavigation();
   setupScrollEffects();
   setupAnimations();
-  setupCustomCursor();
   setupSkillBars();
   setupMatrixBackground();
   setupFloatingElements();
@@ -140,47 +139,6 @@ function setupAnimations() {
   document.querySelectorAll('.about-card, .skill-card, .project-card, .contact-card, .stat-item').forEach(el => {
     observer.observe(el);
   });
-}
-
-// ===== CURSOR PERSONALIZADO =====
-function setupCustomCursor() {
-  const cursor = document.querySelector('.cursor');
-  
-  if (!cursor) return;
-  
-  let mouseX = 0;
-  let mouseY = 0;
-  let cursorX = 0;
-  let cursorY = 0;
-  
-  document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-  });
-  
-  // Efectos en hover
-  document.querySelectorAll('a, button, .project-card, .skill-card').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      cursor.style.transform = 'scale(1.5)';
-    });
-    
-    el.addEventListener('mouseleave', () => {
-      cursor.style.transform = 'scale(1)';
-    });
-  });
-  
-  // Animación del cursor
-  function animateCursor() {
-    cursorX += (mouseX - cursorX) * 0.1;
-    cursorY += (mouseY - cursorY) * 0.1;
-    
-    cursor.style.left = cursorX + 'px';
-    cursor.style.top = cursorY + 'px';
-    
-    requestAnimationFrame(animateCursor);
-  }
-  
-  animateCursor();
 }
 
 // ===== BARRAS DE HABILIDADES =====

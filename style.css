@@ -1092,6 +1092,10 @@ body {
 
 /* ===== TABLET (768px - 991px) ===== */
 @media (max-width: 991px) and (min-width: 768px) {
+  .hero {
+    padding-top: 5rem;
+  }
+
   .container {
     padding: 0 1.5rem;
   }
@@ -1112,6 +1116,10 @@ body {
   
   .hero-description {
     font-size: 1rem;
+  }
+  
+  .hero-cta {
+    justify-content: center;
   }
   
   .hero-image-container {
@@ -1158,6 +1166,10 @@ body {
 
 /* ===== MOBILE LARGE (576px - 767px) ===== */
 @media (max-width: 767px) and (min-width: 576px) {
+  .hero {
+    padding-top: 5rem;
+  }
+
   .container {
     padding: 0 1.5rem;
   }
@@ -1356,6 +1368,7 @@ body {
   
   .hero {
     min-height: 90vh;
+    padding-top: 5rem;
   }
   
   .hero-content {
