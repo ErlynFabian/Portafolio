@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Erlyn Valerio | Desarrollador Frontend</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <meta name="format-detection" content="telephone=no">
@@ -14,248 +14,423 @@
 <body>
 
 <div class="loader">
-  <svg class="loader-logo" viewBox="0 0 100 100">
-    <rect width="100" height="100" rx="20" fill="#fff"/>
-    <text x="50" y="68" font-family="Arial" font-size="60" font-weight="bold" 
-          text-anchor="middle" fill="#5e35b1">EV</text>
-  </svg>
+  <div class="loader-content">
+    <svg class="loader-logo" viewBox="0 0 100 100">
+      <rect width="100" height="100" rx="20" fill="#fff"/>
+      <text x="50" y="68" font-family="Arial" font-size="60" font-weight="bold" 
+            text-anchor="middle" fill="#5e35b1">EV</text>
+    </svg>
+    <div class="loader-text">Cargando...</div>
+  </div>
 </div>
 
 <canvas id="matrix"></canvas>
 
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">EV</a>
-      <ul class="nav-links">
-        <li><a href="#about" class="nav-link">Sobre mí</a></li>
-        <li><a href="#skills" class="nav-link">Habilidades</a></li>
-        <li><a href="#projects" class="nav-link">Proyectos</a></li>
-        <li><a href="#contact" class="nav-link">Contacto</a></li>
-      </ul>
-      <button class="menu-toggle">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-  </nav>
+<div class="cursor"></div>
 
-  <header class="hero" id="home">
-    <div class="container">
-      <h1 class="hero-title">Erlyn Valerio</h1>
-      <p class="hero-subtitle">Desarrollador Frontend Jr. | Estudiante de Desarrollo de Software</p>
-      <div class="hero-cta">
-        <a href="#projects" class="btn btn-primary">Ver mis proyectos</a>
-        <a href="#contact" class="btn btn-outline">Contactarme</a>
-      </div>
-    </div>
-  </header>
+<nav class="navbar">
+  <div class="container">
+    <a href="#" class="logo">
+      <span class="logo-text">EV</span>
+      <span class="logo-glow"></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">Sobre mí</a></li>
+      <li><a href="#skills" class="nav-link">Habilidades</a></li>
+      <li><a href="#projects" class="nav-link">Proyectos</a></li>
+      <li><a href="#contact" class="nav-link">Contacto</a></li>
+    </ul>
+    <button class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
 
-  <main class="container">
-    <section id="about" class="section">
-      <h2 class="section-title">Sobre <span>mí</span></h2>
-      <div class="card">
-        <div class="about-content">
-          <div class="about-text">
-            <p>Soy estudiante del ITLA (7mo cuatrimestre) con enfoque en desarrollo web. Me apasiona crear interfaces modernas, accesibles y responsivas utilizando las mejores prácticas de desarrollo.</p>
-            <p>Actualmente me especializo en el ecosistema frontend con HTML, CSS y JavaScript, mientras complemento mis conocimientos con bases de datos SQL. Siempre estoy buscando oportunidades para crecer profesionalmente y enfrentar nuevos desafíos tecnológicos.</p>
-          </div>
-          <div class="about-image">
-            <img src="image/programacion-web.jpg" alt="Erlyn Valerio" class="project-image-full" 
-            style="border: 3px ; border-radius: 8px;">
-            <div class="image-placeholder"></div>
-          </div>
+<header class="hero" id="home">
+  <div class="hero-background">
+    <div class="hero-particles"></div>
+    <div class="hero-gradient"></div>
+  </div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i class="fas fa-code"></i>
+          <span>Desarrollador Frontend</span>
         </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <h2 class="section-title">Mis <span>habilidades</span></h2>
-      <div class="card">
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3>Tecnologías principales</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <i class="fab fa-html5"></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-css3-alt"></i>
-                <span>CSS3</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-js"></i>
-                <span>JavaScript</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="skill-category">
-            <h3>Otras tecnologías</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <i class="fas fa-database"></i>
-                <span>SQL</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-mobile-alt"></i>
-                <span>Responsive Design</span>
-              </div>
-              <div class="skill-item">
-                <i class="fab fa-git-alt skill-icon git-icon"></i>
-                <span>Git</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="skill-category">
-            <h3>Habilidades blandas</h3>
-            <div class="skills-list">
-              <div class="skill-item">
-                <i class="fas fa-users"></i>
-                <span>Trabajo en equipo</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-bolt"></i>
-                <span>Aprendizaje rápido</span>
-              </div>
-              <div class="skill-item">
-                <i class="fas fa-comments"></i>
-                <span>Comunicación efectiva</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <h2 class="section-title">Mis <span>proyectos</span></h2>
-      <div class="projects-grid">
-        <!-- Proyecto 1 -->
-        <div class="project-card">
-          <img src="image/Inventario.png" alt="Inventario Wear Shop" class="project-image-full">
-          <div class="project-content">
-            <h3>Inventario para Wear Shop</h3>
-            <p>Aplicación web para gestión de inventario desarrollada con HTML, CSS y JavaScript, implementando CRUD básico y categorización de productos.</p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-        </div>
-        
-        <!-- Proyecto 2 -->
-        <div class="project-card">
-          <img src="image/catalogo1.png" alt="Catálogo de Productos" class="project-image-full">
-          <div class="project-content">
-            <h3>Catálogo de Productos</h3>
-            <p>Sitio web responsivo que muestra productos con diseño moderno, filtros por categoría y animaciones CSS para mejorar la experiencia de usuario.</p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>Responsive</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Proyecto 3 -->
-        <div class="project-card">
-          <img src="image/Lista de tarea.png" alt="Lista de Tareas" class="project-image-full">
-          <div class="project-content">
-            <h3>Lista de Tareas</h3>
-            <p>Aplicación web desarrollada con HTML, CSS y JavaScript que permite gestionar tareas de forma simple y eficiente.
-              Los usuarios pueden agregar tareas, marcarlas como completadas, eliminarlas</p>
-            <div class="project-tech">
-              <span>HTML</span>
-              <span>CSS</span>
-              <span>JavaScript</span>
-            </div>
-          </div>
-
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <h2 class="section-title">Contáct<span>ame</span></h2>
-      
-      <div class="card contact-card-simple">
-        <!-- Información de contacto -->
-        <div class="contact-info-simple">
-          <div class="contact-item-simple">
+        <h1 class="hero-title">
+          <span class="title-line">Hola, soy</span>
+          <span class="title-name">Erlyn Valerio</span>
+          <span class="title-subtitle">Desarrollador Frontend Jr.</span>
+        </h1>
+        <p class="hero-description">
+          Creo experiencias web modernas y responsivas que combinan diseño atractivo con funcionalidad excepcional. 
+          Apasionado por las nuevas tecnologías y siempre en busca de nuevos desafíos.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>Ver mis proyectos</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <span>Contactarme</span>
             <i class="fas fa-envelope"></i>
-            <div>
-              <h3>Email</h3>
-              <p>erlinvfabian01@gmail.com</p>
-            </div>
-          </div>
-          
-          <div class="contact-item-simple">
-            <i class="fas fa-phone"></i>
-            <div>
-              <h3>Teléfono</h3>
-              <p>829 563 3977</p>
-            </div>
-          </div>
-          
-          <div class="contact-item-simple">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h3>Ubicación</h3>
-              <p>Santo Domingo Norte, República Dominicana</p>
-            </div>
-          </div>
+          </a>
         </div>
-        
-        <!-- GitHub y URL -->
-        <div class="contact-extra-info">
-          <div class="github-link">
-            <a href="https://github.com/ErlynFabian" target="_blank" class="btn btn-github">
-              <i class="fab fa-github"></i> Mi perfil de GitHub
-            </a>
-          </div>
-          <div class="portfolio-url">
-            <a href="https://tafolio-erlyn-valerio.netlify.app" target="_blank" class="portfolio-link">
-            </a>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-container">
+          <img src="image/programacion-web.jpg" alt="Erlyn Valerio" class="hero-image">
+          <div class="hero-image-glow"></div>
+          <div class="floating-elements">
+            <div class="floating-element" data-speed="2">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="floating-element" data-speed="1.5">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="floating-element" data-speed="2.5">
+              <i class="fab fa-js"></i>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="scroll-arrow"></div>
+  </div>
+</header>
 
-    <section id="curriculum" class="section cv-section">
-      <h2 class="section-title">Mi <span>Curriculum</span></h2>
-      <div class="card cv-card-solo">
-        <div class="cv-content-solo">
-          <div class="cv-header-solo">
-            <i class="fas fa-file-pdf"></i>
-            <h3>Curriculum Vitae</h3>
+<main class="container">
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Sobre <span>mí</span></h2>
+      <p class="section-subtitle">Conoce más sobre mi trayectoria y pasión por el desarrollo</p>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-graduation-cap"></i>
           </div>
-          <p class="cv-description">Documento profesional con mi experiencia completa</p>
-          <div class="cv-actions-solo">
+          <h3>Educación</h3>
+          <p>Estudiante del ITLA (7mo cuatrimestre) con enfoque en desarrollo web. Me apasiona crear interfaces modernas, accesibles y responsivas utilizando las mejores prácticas de desarrollo.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Especialización</h3>
+          <p>Actualmente me especializo en el ecosistema frontend con HTML, CSS y JavaScript, mientras complemento mis conocimientos con bases de datos SQL. Siempre estoy buscando oportunidades para crecer profesionalmente.</p>
+        </div>
+        <div class="about-card">
+          <div class="about-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>Objetivos</h3>
+          <p>Mi objetivo es convertirme en un desarrollador full-stack completo, contribuyendo a proyectos innovadores que impacten positivamente en la experiencia del usuario.</p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <div class="stat-number">3+</div>
+          <div class="stat-label">Proyectos Completados</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2+</div>
+          <div class="stat-label">Años de Estudio</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Compromiso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Mis <span>habilidades</span></h2>
+      <p class="section-subtitle">Tecnologías y herramientas que domino</p>
+    </div>
+    <div class="skills-container">
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-layer-group"></i>
+          Frontend
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="HTML5">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <div class="skill-info">
+              <h4>HTML5</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="CSS3">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <div class="skill-info">
+              <h4>CSS3</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="JavaScript">
+            <div class="skill-icon">
+              <i class="fab fa-js"></i>
+            </div>
+            <div class="skill-info">
+              <h4>JavaScript</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="80"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-tools"></i>
+          Herramientas
+        </h3>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="Git">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Git</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="SQL">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="skill-info">
+              <h4>SQL</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="70"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="Responsive">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <div class="skill-info">
+              <h4>Responsive Design</h4>
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="skills-category">
+        <h3 class="category-title">
+          <i class="fas fa-users"></i>
+          Habilidades Blandas
+        </h3>
+        <div class="soft-skills">
+          <div class="soft-skill-item">
+            <i class="fas fa-users"></i>
+            <span>Trabajo en equipo</span>
+          </div>
+          <div class="soft-skill-item">
+            <i class="fas fa-bolt"></i>
+            <span>Aprendizaje rápido</span>
+          </div>
+          <div class="soft-skill-item">
+            <i class="fas fa-comments"></i>
+            <span>Comunicación efectiva</span>
+          </div>
+          <div class="soft-skill-item">
+            <i class="fas fa-lightbulb"></i>
+            <span>Resolución de problemas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Mis <span>proyectos</span></h2>
+      <p class="section-subtitle">Algunos de mis trabajos más destacados</p>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image/Inventario.png" alt="Inventario Wear Shop">
+        </div>
+        <div class="project-content">
+          <h3>Inventario para Wear Shop</h3>
+          <p>Aplicación web para gestión de inventario desarrollada con HTML, CSS y JavaScript, implementando CRUD básico y categorización de productos.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image/catalogo1.png" alt="Catálogo de Productos">
+        </div>
+        <div class="project-content">
+          <h3>Catálogo de Productos</h3>
+          <p>Sitio web responsivo que muestra productos con diseño moderno, filtros por categoría y animaciones CSS para mejorar la experiencia de usuario.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">Responsive</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-image">
+          <img src="image/Lista de tarea.png" alt="Lista de Tareas">
+        </div>
+        <div class="project-content">
+          <h3>Lista de Tareas</h3>
+          <p>Aplicación web desarrollada con HTML, CSS y JavaScript que permite gestionar tareas de forma simple y eficiente.</p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML</span>
+            <span class="tech-tag">CSS</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Contáct<span>ame</span></h2>
+      <p class="section-subtitle">¿Tienes un proyecto en mente? ¡Hablemos!</p>
+    </div>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Email</h3>
+            <p>erlinvfabian01@gmail.com</p>
+            <a href="mailto:erlinvfabian01@gmail.com" class="contact-link"></a>
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Teléfono</h3>
+            <p>829 563 3977</p>
+            <a href="tel:8295633977" class="contact-link"></a>
+          </div>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-details">
+            <h3>Ubicación</h3>
+            <p>Santo Domingo Norte, República Dominicana</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="contact-social">
+        <h3>Sígueme en redes</h3>
+        <div class="social-links">
+          <a href="https://github.com/ErlynFabian" target="_blank" class="social-link github">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="curriculum" class="section">
+    <div class="section-header">
+      <h2 class="section-title">Mi <span>Curriculum</span></h2>
+      <p class="section-subtitle">Descarga mi CV completo</p>
+    </div>
+    <div class="cv-container">
+      <div class="cv-card">
+        <div class="cv-icon">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="cv-content">
+          <h3>Curriculum Vitae</h3>
+          <p>Documento profesional con mi experiencia completa, habilidades y proyectos realizados.</p>
+          <div class="cv-actions">
             <a href="https://drive.google.com/file/d/1h56JKXRbX5ezR-UItXcl0ymjNRoSeXMM/view" 
                target="_blank" 
-               class="btn btn-primary btn-cv">
-              <i class="fas fa-eye"></i> Ver CV
+               class="btn btn-primary">
+              <i class="fas fa-eye"></i>
+              <span>Ver CV</span>
             </a>
             <a href="https://drive.google.com/uc?export=download&id=1h56JKXRbX5ezR-UItXcl0ymjNRoSeXMM" 
-               class="btn btn-outline btn-cv">
-              <i class="fas fa-download"></i> Descargar
+               class="btn btn-outline">
+              <i class="fas fa-download"></i>
+              <span>Descargar</span>
             </a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
 
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 Erlyn Valerio. Todos los derechos reservados.</p>
-      <div class="social-links">
-        <a href="https://github.com/ErlynFabian" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span>EV</span>
+        <p>Desarrollador Frontend</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">Sobre mí</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/ErlynFabian" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
       </div>
     </div>
-  </footer>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Erlyn Valerio. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
