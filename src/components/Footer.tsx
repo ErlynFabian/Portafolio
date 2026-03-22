@@ -1,7 +1,9 @@
-import { Github, Linkedin, Mail, Twitter } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { t } = useLanguage();
 
   return (
     <footer className="w-full py-12 px-6 border-t border-border/40 bg-background/50 backdrop-blur-sm transition-all duration-300">
@@ -11,7 +13,7 @@ const Footer = () => {
             EF.
           </h2>
           <p className="text-sm text-muted-foreground text-center md:text-left max-w-xs">
-            Desarrollador Web apasionado por crear experiencias digitales innovadoras y eficientes.
+            {t("footer.description")}
           </p>
         </div>
 
@@ -36,7 +38,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="erlinvfabian01@gmail.com"
+              href="mailto:erlinvfabian01@gmail.com"
               className="p-2 rounded-full border border-border/50 hover:border-primary hover:text-primary transition-all duration-300 hover:scale-110"
               aria-label="Email"
             >
@@ -44,10 +46,10 @@ const Footer = () => {
             </a>
           </div>
           <nav className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm font-medium text-muted-foreground">
-            <a href="#about" className="hover:text-primary transition-colors">Sobre mí</a>
-            <a href="#experience" className="hover:text-primary transition-colors">Experiencia</a>
-            <a href="#skills" className="hover:text-primary transition-colors">Habilidades</a>
-            <a href="#contact" className="hover:text-primary transition-colors">Contacto</a>
+            <a href="#about" className="hover:text-primary transition-colors">{t("nav.about")}</a>
+            <a href="#experience" className="hover:text-primary transition-colors">{t("nav.experience")}</a>
+            <a href="#skills" className="hover:text-primary transition-colors">{t("nav.skills")}</a>
+            <a href="#contact" className="hover:text-primary transition-colors">{t("nav.contact")}</a>
           </nav>
         </div>
 
@@ -56,7 +58,7 @@ const Footer = () => {
             &copy; {currentYear} Erlyn Valerio Fabian
           </p>
           <p className="text-xs text-muted-foreground flex items-center gap-1.5">
-            Hecho con <span className="text-red-500 animate-pulse">💚</span> y React
+            {t("footer.madeWith")} <span className="text-red-500 animate-pulse">💚</span> {t("footer.and")} React
           </p>
         </div>
       </div>

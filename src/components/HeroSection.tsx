@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Mail, Phone, MapPin, ChevronDown } from "lucide-react";
+import { useLanguage } from "../context/LanguageContext";
 
 const HeroSection = () => {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
       {/* Grid background */}
@@ -17,7 +20,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="font-mono text-primary text-sm md:text-base mb-4 tracking-widest uppercase">
-            {'// Desarrollador Web Junior'}
+            {`// ${t("hero.role")}`}
           </p>
           <h1 className="font-heading text-5xl sm:text-6xl md:text-8xl font-bold tracking-tight mb-6">
             <span className="text-foreground">Erlyn</span>
@@ -33,8 +36,7 @@ const HeroSection = () => {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Construyo experiencias web modernas con HTML, CSS, JavaScript y más.
-          Apasionado por el código limpio y el aprendizaje continuo.
+          {t("hero.description")}
         </motion.p>
 
         <motion.div
