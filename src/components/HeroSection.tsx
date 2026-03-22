@@ -4,7 +4,7 @@ import { useLanguage } from "../context/LanguageContext";
 
 const HeroSection = () => {
   const { t } = useLanguage();
-  
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden px-4">
       {/* Grid background */}
@@ -43,12 +43,11 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.6 }}
-          className="flex flex-wrap items-center justify-center gap-4 md:gap-6 text-sm text-muted-foreground"
+          className="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-sm text-muted-foreground px-4"
         >
-          <a href="mailto:Erlinvfabian01@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
+          <a href="mailto:erlinvfabian01@gmail.com" className="flex items-center gap-2 hover:text-primary transition-colors">
             <Mail className="w-4 h-4" />
-            <span className="hidden sm:inline">Erlinvfabian01@gmail.com</span>
-            <span className="sm:hidden">Email</span>
+            <span>erlinvfabian01@gmail.com</span>
           </a>
           <span className="flex items-center gap-2">
             <Phone className="w-4 h-4" />

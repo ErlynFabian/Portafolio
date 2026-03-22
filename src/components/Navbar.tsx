@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { motion, useScroll, useSpring } from "framer-motion";
+import { motion, useScroll, useSpring, AnimatePresence } from "framer-motion";
 
 import { useLanguage } from "../context/LanguageContext";
 
@@ -54,8 +54,22 @@ const Navbar = () => {
           >
             {language}
           </button>
-          <button onClick={() => setOpen(!open)} className="text-foreground">
-            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+          <button onClick={() => setOpen(!open)} className="text-foreground relative w-8 h-8 flex items-center justify-center overflow-hidden">
+            <motion.div
+              animate={{ rotate: open ? 90 : 0, opacity: open ? 0 : 1 }}
+              transition={{ duration: 0.3 }}
+              className="absolute"
+            >
+              <Menu className="w-5 h-5" />
+            </motion.div>
+            <motion.div
+              initial={{ rotate: -90, opacity: 0 }}
+              animate={{ rotate: open ? 0 : -90, opacity: open ? 1 : 0 }}
+              transition={{ duration: 0.3 }}
+              className="absolute"
+            >
+              <X className="w-5 h-5" />
+            </motion.div>
           </button>
         </div>
       </div>
@@ -67,19 +81,31 @@ const Navbar = () => {
       />
 
       {/* Mobile menu */}
-      {open && (
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="md:hidden bg-background border-b border-border px-4 py-4 space-y-3"
-        >
-          {links.map((l) => (
-            <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="block text-sm text-muted-foreground hover:text-primary transition-colors">
-              {l.label}
-            </a>
-          ))}
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {open && (
+          <motion.div 
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            transition={{ duration: 0.2, ease: "easeOut" }}
+            className="md:hidden absolute top-14 left-0 right-0 bg-background/95 backdrop-blur-md border-b border-border px-4 py-4 space-y-1 overflow-hidden shadow-xl"
+          >
+            {links.map((l, i) => (
+              <motion.a 
+                key={l.href} 
+                href={l.href} 
+                onClick={() => setOpen(false)} 
+                initial={{ x: -10, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: i * 0.05 }}
+                className="block py-3 text-sm font-medium text-muted-foreground hover:text-primary transition-colors border-b border-border/20 last:border-0"
+              >
+                {l.label}
+              </motion.a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
 };
