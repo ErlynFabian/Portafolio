@@ -1,0 +1,203 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Erlyn Valerio Fabian!}}"
+            },
+            "es": {
+                "title_short": "!Saludos!",
+                "title_short_nav": "Sobre mi",
+                "title_long_prefix": "Hola...",
+                "title_long": "Soy {{Erlyn Valerio Fabian!}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Santo Domingo Norte - RD",
+                    "link": {"href": "", "tooltipString": ""},
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "erlinvfabian01@gmail.com",
+                    "link": {"href": "mailto:erlinvfabian01@gmail.com", "tooltipString": "email_me"},
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "@erlynFabian",
+                    "link": {"href": "https://github.com/erlynFabian", "tooltipString": "see_on_github"},
+                    "faIcon": "fa-brands fa-github"
+                }
+            ]
+        },
+
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {"title": "{{A little bit}} about me..."},
+                "es": {"title": "{{Un poco}} sobre mi..."}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "text": "<p>Professional with knowledge in {{web development}} and {{data management}}, experienced in using {{technological tools}}, {{databases}}, and {{information analysis}}. I have worked on projects involving data organization, optimization, and basic digital solutions.</p><p>I have experience using {{Git}} for {{version control}}, active collaboration with development teams, and support in testing and app deployments. I am a responsible person, a {{fast learner}}, with good communication and results-oriented.</p>"
+                        },
+                        "es": {
+                            "text": "<p>Profesional con conocimientos en {{desarrollo web}} y {{manejo de datos}}, con experiencia en el uso de {{herramientas tecnologicas}}, {{bases de datos}} y {{analisis de informacion}}. He participado en proyectos donde he gestionado, organizado y optimizado datos, asi como en el desarrollo de {{soluciones digitales basicas}}.</p><p>Cuento con experiencia en el uso de {{control de versiones}} con {{Git}}, {{colaboracion activa}} con equipos de desarrollo y apoyo en pruebas y despliegues de aplicaciones. Soy una persona responsable, con {{rapido aprendizaje}}, buena comunicacion y {{orientacion a resultados}}.</p>"
+                        }
+                    }
+                }
+            ]
+        },
+
+        {
+            "id": 3,
+            "component": "ArticleInfoList",
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "locales": {
+                "en": {"title": "Personal {{interests}}"},
+                "es": {"title": "Intereses {{personales}}"}
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Web}} Development",
+                            "text": "Building modern responsive websites and web apps."
+                        },
+                        "es": {
+                            "title": "Desarrollo {{Web}}",
+                            "text": "Creando sitios web modernos y responsivos."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-gamepad",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Gaming}}",
+                            "text": "Gaming enthusiast and PC builder."
+                        },
+                        "es": {
+                            "title": "{{Videojuegos}}",
+                            "text": "Entusiasta de los videojuegos y armado de PCs."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-microchip",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Electronics}}",
+                            "text": "Background in technical electronics and hardware."
+                        },
+                        "es": {
+                            "title": "{{Electronica}}",
+                            "text": "Formacion en electronica tecnica y hardware."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{Continuous}} Learning",
+                            "text": "Always learning new technologies and improving skills."
+                        },
+                        "es": {
+                            "title": "Aprendizaje {{Continuo}}",
+                            "text": "Siempre aprendiendo nuevas tecnologias y mejorando habilidades."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-solid fa-window-restore",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{UX}} Design",
+                            "text": "Studying user experience principles."
+                        },
+                        "es": {
+                            "title": "Diseno {{UX}}",
+                            "text": "Estudiando los principios de la experiencia del usuario."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-robot",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "label": null,
+                    "link": {"href": null, "tooltipString": null},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {
+                            "title": "{{AI}} & Automation",
+                            "text": "Exploring AI tools and automation for web development."
+                        },
+                        "es": {
+                            "title": "{{IA}} y Automatizacion",
+                            "text": "Explorando herramientas de IA y automatizacion para desarrollo web."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

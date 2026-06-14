@@ -1,0 +1,154 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Portfolio",
+                "title_short_nav": "Portfolio",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Portfolio}}"
+            },
+            "es": {
+                "title_short": "Portafolio",
+                "title_short_nav": "Portafolio",
+                "title_long_prefix": "Explora",
+                "title_long": "Mi {{Portafolio}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_apps": "Apps",
+                    "category_web": "Web",
+                    "category_utilities": "Utilities"
+                },
+                "es": {
+                    "category_all": "Todo",
+                    "category_apps": "Apps",
+                    "category_web": "Web",
+                    "category_utilities": "Utilidades"
+                }
+            },
+            "settings": {
+                "categorize_by": ["category_web", "category_utilities"],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_web",
+                    "img": "wearshop.jpeg",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://wearshopcatalogo.netlify.app/", "tooltipString": "visit_site", "faIcon": "fa-solid fa-arrow-up-right-from-square"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Wear Shop Catalog",
+                            "text": "A complete <b>e-commerce catalog</b> for a clothing store with a full <b>admin panel</b>. Features product management, billing, sales reports, and a comprehensive dashboard for business operations.",
+                            "tags": ["React", "E-commerce", "Admin Panel", "Dashboard"]
+                        },
+                        "es": {
+                            "title": "Catalogo Wear Shop",
+                            "text": "<b>Catalogo e-commerce</b> completo para tienda de ropa con <b>panel de administracion</b>. Incluye gestion de productos, facturacion, reportes de ventas y dashboard para operaciones del negocio.",
+                            "tags": ["React", "E-commerce", "Panel Admin", "Dashboard"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_web",
+                    "img": "relancer.ico",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://relancercrm.vercel.app/", "tooltipString": "visit_site", "faIcon": "fa-solid fa-arrow-up-right-from-square"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Relancer CRM",
+                            "text": "A <b>smart CRM</b> designed for freelancers. Manage clients, projects, invoicing, and time tracking in one place with a minimalist and intuitive interface.",
+                            "tags": ["React", "CRM", "Freelancers", "Productivity"]
+                        },
+                        "es": {
+                            "title": "Relancer CRM",
+                            "text": "<b>CRM inteligente</b> disenado para freelancers. Gestiona clientes, proyectos, facturacion y tiempo en un solo lugar con una interfaz minimalista e intuitiva.",
+                            "tags": ["React", "CRM", "Freelancers", "Productividad"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_web",
+                    "img": "finario.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://finariord.vercel.app/", "tooltipString": "visit_site", "faIcon": "fa-solid fa-arrow-up-right-from-square"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Finario",
+                            "text": "Calculate loans, interest, and installments in seconds. Free financial tools designed for Dominican Republic. Built with <b>Next.js</b> and <b>TypeScript</b>.",
+                            "tags": ["Next.js", "TypeScript", "Finance", "Calculator"]
+                        },
+                        "es": {
+                            "title": "Finario",
+                            "text": "Calcula prestamos, intereses y cuotas en segundos. Herramientas financieras gratuitas disenadas para Republica Dominicana. Construido con <b>Next.js</b> y <b>TypeScript</b>.",
+                            "tags": ["Next.js", "TypeScript", "Finanzas", "Calculadora"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_web",
+                    "img": "mischelitos.png",
+                    "faIcon": "",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "preview": {
+                        "links": [
+                            {"href": "https://mischelitos.vercel.app/", "tooltipString": "visit_site", "faIcon": "fa-solid fa-arrow-up-right-from-square"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Mis Chelitos",
+                            "text": "Manage your finances smartly. Save more, spend less, and reach your goals. Built with <b>React</b> and <b>TypeScript</b>.",
+                            "tags": ["React", "TypeScript", "Finance", "Personal Finance"]
+                        },
+                        "es": {
+                            "title": "Mis Chelitos",
+                            "text": "Gestiona tus finanzas de forma inteligente. Ahorra mas, gasta menos y alcanza tus metas. Construido con <b>React</b> y <b>TypeScript</b>.",
+                            "tags": ["React", "TypeScript", "Finanzas", "Finanzas Personales"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

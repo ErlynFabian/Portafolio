@@ -1,0 +1,98 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Education",
+                "title_short_nav": "Education",
+                "title_long_prefix": "This is my",
+                "title_long": "{{Education}} Background"
+            },
+            "es": {
+                "title_short": "Educacion",
+                "title_short_nav": "Educacion",
+                "title_long_prefix": "Esta es mi",
+                "title_long": "{{Formacion}} Educativa"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2022, "month": 8},
+                    "dateEnd": {"year": 2026, "month": 6},
+                    "locales": {
+                        "en": {
+                            "title": "{{Software Development}} Technologist",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "ITLA (Americas Institute of Technology)",
+                            "text": "Completed a comprehensive program focused on [[software development]], covering programming, databases, web development, and software engineering principles.",
+                            "list": [
+                                "Web Development with HTML, CSS, JavaScript",
+                                "Database management with SQL",
+                                "Object-oriented programming",
+                                "Version control with Git"
+                            ],
+                            "tags": ["Web Development", "Databases", "Git"]
+                        },
+                        "es": {
+                            "title": "Tecnologo en {{Desarrollo de Software}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "ITLA (Instituto Tecnologico de las Americas)",
+                            "text": "Complete un programa integral enfocado en [[desarrollo de software]], cubriendo programacion, bases de datos, desarrollo web y principios de ingenieria de software.",
+                            "list": [
+                                "Desarrollo Web con HTML, CSS, JavaScript",
+                                "Gestion de bases de datos con SQL",
+                                "Programacion orientada a objetos",
+                                "Control de versiones con Git"
+                            ],
+                            "tags": ["Desarrollo Web", "Bases de Datos", "Git"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-microchip",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2018, "month": 8},
+                    "dateEnd": {"year": 2021, "month": 6},
+                    "locales": {
+                        "en": {
+                            "title": "Technical {{Bachelor}} in Electronics",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "ITAO (Institute of Arts and Crafts)",
+                            "text": "Earned a technical bachelor's degree with a focus on [[electronics]], gaining foundational knowledge in electrical circuits, hardware, and technical systems.",
+                            "list": [],
+                            "tags": ["Electronics", "Hardware"]
+                        },
+                        "es": {
+                            "title": "Bachiller {{Tecnico}} en Electronica",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "ITAO (Instituto Tecnologico de Artes y Oficios)",
+                            "text": "Obtuve un bachillerato tecnico con enfoque en [[electronica]], adquiriendo conocimientos fundamentales en circuitos electricos, hardware y sistemas tecnicos.",
+                            "list": [],
+                            "tags": ["Electronica", "Hardware"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

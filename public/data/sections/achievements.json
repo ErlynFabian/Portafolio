@@ -1,0 +1,125 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Awards",
+                "title_short_nav": "Achievements",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Achievements}}"
+            },
+            "es": {
+                "title_short": "Logros",
+                "title_short_nav": "Logros",
+                "title_long_prefix": "Aqui estan mis",
+                "title_long": "{{Logros}} Profesionales"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleCards",
+            "locales": {
+                "en": { "title": "Certifications" },
+                "es": { "title": "Certificaciones" }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {"bg": "#47A248", "fill": "#EEE"},
+                    "date": {"year": 2024, "month": 6},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "SQL {{Intermediate}}",
+                            "text": "SQL Intermediate certification - solid database querying skills."
+                        },
+                        "es": {
+                            "title": "SQL {{Intermedio}}",
+                            "text": "Certificacion SQL Intermedio - solidas habilidades de consulta de bases de datos."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "#6C5CE7", "fill": "#EEE"},
+                    "date": {"year": 2024, "month": 3},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Introduction}} to SQL",
+                            "text": "Fundamentals of SQL and relational databases."
+                        },
+                        "es": {
+                            "title": "{{Introduccion}} a SQL",
+                            "text": "Fundamentos de SQL y bases de datos relacionales."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-brands fa-python",
+                    "faIconColors": {"bg": "#3776AB", "fill": "#EEE"},
+                    "date": {"year": 2025, "month": 1},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Python}} Intermediate",
+                            "text": "Python Intermediate certification."
+                        },
+                        "es": {
+                            "title": "Python {{Intermedio}}",
+                            "text": "Certificacion Python Intermedio."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-python",
+                    "faIconColors": {"bg": "#FFD43B", "fill": "#306998"},
+                    "date": {"year": 2024, "month": 10},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Introduction}} to Python",
+                            "text": "Fundamentals of Python programming."
+                        },
+                        "es": {
+                            "title": "{{Introduccion}} a Python",
+                            "text": "Fundamentos de programacion en Python."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {"bg": "#00B894", "fill": "#EEE"},
+                    "date": {"year": 2024, "month": 1},
+                    "link": {"href": "", "tooltipString": ""},
+                    "locales": {
+                        "en": {
+                            "title": "{{Tech}} for Everyone",
+                            "text": "Technology fundamentals and digital literacy."
+                        },
+                        "es": {
+                            "title": "{{Tecnologia}} para Todos",
+                            "text": "Fundamentos de tecnologia y alfabetizacion digital."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

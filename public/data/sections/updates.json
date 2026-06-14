@@ -1,0 +1,195 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Life recently",
+                "title_short_nav": "Updates",
+                "title_long_prefix": "Take a look at my",
+                "title_long": "Recent {{Updates}}"
+            },
+            "es": {
+                "title_short": "Vida Reciente",
+                "title_short_nav": "Actualizaciones",
+                "title_long_prefix": "Consulta mis",
+                "title_long": "Actualizaciones {{Recientes}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleFacts",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": null,
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "05",
+                            "text": "Projects Built"
+                        },
+                        "es": {
+                            "title": "05",
+                            "text": "Proyectos Construidos"
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": null,
+                    "faIcon": "fa-solid fa-graduation-cap",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "ITLA",
+                            "text": "Software Development Student"
+                        },
+                        "es": {
+                            "title": "ITLA",
+                            "text": "Estudiante de Desarrollo de Software"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": null,
+                    "faIcon": "fa-solid fa-clock",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "4+",
+                            "text": "Years Learning"
+                        },
+                        "es": {
+                            "title": "4+",
+                            "text": "Años de Aprendizaje"
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": null,
+                    "faIcon": "fa-solid fa-globe",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "locales": {
+                        "en": {
+                            "title": "2026",
+                            "text": "Graduation Year"
+                        },
+                        "es": {
+                            "title": "2026",
+                            "text": "Año de Graduacion"
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": { "title": "Quick {{Updates}}" },
+                "es": { "title": "{{Actualizaciones}} Rapidas" }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 3,
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {"year": 2026, "month": 6},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/ErlynFabian/Finario", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Building {{Finario}}",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "",
+                            "text": "I developed [[Finario]], a loan calculator built with Next.js and TypeScript to help users manage loans and track payments."
+                        },
+                        "es": {
+                            "title": "Construyendo {{Finario}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "",
+                            "text": "Desarrolle [[Finario]], una calculadora de prestamos construida con Next.js y TypeScript para ayudar a los usuarios a gestionar prestamos y rastrear pagos."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {"year": 2025, "month": 1},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/ErlynFabian/Mini-CRM", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Building {{Mini-CRM!}}",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "",
+                            "text": "I developed [[Mini-CRM]], a client management system for freelancers and small businesses. Built with React, TypeScript, and Supabase."
+                        },
+                        "es": {
+                            "title": "Construyendo {{Mini-CRM!}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "",
+                            "text": "Desarrolle [[Mini-CRM]], un sistema de gestion de clientes para freelancers y pequenas empresas. Construido con React, TypeScript y Supabase."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {"year": 2025, "month": 6},
+                    "preview": {
+                        "links": [
+                            {"href": "https://github.com/ErlynFabian/tienda-gamer", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Starting as {{Junior Developer!}}",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "Rentary Group",
+                            "text": "I started my professional journey as a [[Junior Web Developer]] at Rentary Group, working on real-world web applications and gaining valuable industry experience."
+                        },
+                        "es": {
+                            "title": "Empezando como {{Junior Developer!}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "Rentary Group",
+                            "text": "Inicie mi viaje profesional como [[Desarrollador Web Junior]] en Rentary Group, trabajando en aplicaciones web reales y adquiriendo valiosa experiencia en la industria."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

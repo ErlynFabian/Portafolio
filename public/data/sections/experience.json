@@ -1,0 +1,177 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            },
+            "es": {
+                "title_short": "Experiencia",
+                "title_short_nav": "Experiencia",
+                "title_long_prefix": "Resumen de mi",
+                "title_long": "Experiencia {{Laboral}}"
+            }
+        }
+    },
+
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {},
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "dateStart"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2025, "month": 6},
+                    "dateEnd": {"year": 2026, "month": 1},
+                    "locales": {
+                        "en": {
+                            "title": "{{Junior Web}} Developer",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "Rentary Group",
+                            "text": "Developed and maintained web applications using HTML, CSS, and JavaScript. Supported frontend and backend projects while consuming REST APIs and managing databases.",
+                            "list": [
+                                "Developed and maintained web applications",
+                                "Implemented interfaces using HTML, CSS, and JavaScript",
+                                "Consumed REST APIs and managed databases",
+                                "Performed bug fixes and feature improvements"
+                            ],
+                            "tags": ["HTML", "CSS", "JavaScript", "REST APIs"]
+                        },
+                        "es": {
+                            "title": "Desarrollador {{Web Junior}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "Rentary Group",
+                            "text": "Desarrolle y mantuve aplicaciones web usando HTML, CSS y JavaScript. Apoye proyectos frontend y backend consumiendo APIs REST y gestionando bases de datos.",
+                            "list": [
+                                "Desarrollo y mantenimiento de aplicaciones web",
+                                "Implementacion de interfaces con HTML, CSS y JavaScript",
+                                "Consumo de APIs y manejo de bases de datos",
+                                "Correccion de errores y mejoras de funcionalidades"
+                            ],
+                            "tags": ["HTML", "CSS", "JavaScript", "APIs REST"]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-brands fa-java",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2024, "month": 1},
+                    "dateEnd": {"year": 2024, "month": 3},
+                    "locales": {
+                        "en": {
+                            "title": "Software Development {{Assistant}}",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "ITLA - Santo Domingo Norte",
+                            "text": "Developed an inventory management application using Java and MySQL. Implemented CRUD functions and collaborated using agile methodologies.",
+                            "list": [
+                                "Developed an inventory management app with Java and MySQL",
+                                "Implemented CRUD functions",
+                                "Collaborated using agile methodologies"
+                            ],
+                            "tags": ["Java", "MySQL", "Agile"]
+                        },
+                        "es": {
+                            "title": "Asistente de {{Desarrollo de Software}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "ITLA - Santo Domingo Norte",
+                            "text": "Desarrolle una aplicacion de gestion de inventario con Java y MySQL. Implemente funciones CRUD y trabaje colaborativamente aplicando metodologias agiles.",
+                            "list": [
+                                "Desarrollo de aplicacion de gestion de inventario con Java y MySQL",
+                                "Implementacion de funciones CRUD",
+                                "Trabajo colaborativo con metodologias agiles"
+                            ],
+                            "tags": ["Java", "MySQL", "Agil"]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-headset",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2022, "month": 1},
+                    "dateEnd": {"year": 2024, "month": 6},
+                    "locales": {
+                        "en": {
+                            "title": "{{Customer Service}} Representative",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "Larilei Internet Center",
+                            "text": "Managed petty cash, attended and directed customer needs, and supervised equipment operations.",
+                            "list": [
+                                "In charge of petty cash management",
+                                "Customer attention and needs assessment",
+                                "Equipment and machine supervision"
+                            ],
+                            "tags": ["Customer Service", "Management"]
+                        },
+                        "es": {
+                            "title": "Servicio al {{Cliente}}",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "Centro de Internet Larilei",
+                            "text": "Encargado de caja chica, atencion y canalizacion de necesidades de clientes, y supervision de maquinas.",
+                            "list": [
+                                "Encargado de caja chica",
+                                "Atencion y canalizacion de necesidades de clientes",
+                                "Supervision de maquinas"
+                            ],
+                            "tags": ["Servicio al Cliente", "Gestion"]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-solid fa-tools",
+                    "faIconColors": {"bg": "", "fill": ""},
+                    "dateStart": {"year": 2021, "month": 1},
+                    "dateEnd": {"year": 2022, "month": 12},
+                    "locales": {
+                        "en": {
+                            "title": "Technical {{Support}} / Sales",
+                            "province": "Santo Domingo",
+                            "country": "Dominican Republic",
+                            "institution": "Moda Wear Shop",
+                            "text": "Provided customer service, quotations, and shipping coordination. Maintained and updated the web catalog.",
+                            "list": [
+                                "Customer service and sales support",
+                                "Quotation and shipping coordination",
+                                "Web catalog maintenance and updates"
+                            ],
+                            "tags": ["Technical Support", "Sales", "E-commerce"]
+                        },
+                        "es": {
+                            "title": "Soporte {{Tecnico}} / Ventas",
+                            "province": "Santo Domingo",
+                            "country": "Republica Dominicana",
+                            "institution": "Moda Wear Shop",
+                            "text": "Atencion al cliente, cotizacion y envios. Mantenimiento y actualizacion del catalogo web.",
+                            "list": [
+                                "Atencion al cliente, cotizacion y envios",
+                                "Mantenimiento y actualizacion del catalogo web"
+                            ],
+                            "tags": ["Soporte Tecnico", "Ventas", "E-commerce"]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

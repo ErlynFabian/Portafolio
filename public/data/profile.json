@@ -1,0 +1,31 @@
+{
+    "name": "Erlyn Valerio Fabian",
+
+    "profilePictureUrl": "2x2.jpeg",
+    "resumePdfUrl": "",
+
+    "statusCircleVisible": true,
+    "statusCircleVariant": "available",
+    "statusCircleHoverMessage": "status_message_available_for_freelance",
+
+    "locales": {
+        "en": {
+            "localized_name": "Erlyn Valerio Fabian",
+            "localized_name_stylized": " [[Erlyn {{Valerio Fabian}}]]",
+            "status_message_available_for_freelance": "Open to new opportunities!",
+            "roles": [
+                "Junior Web Developer",
+                "Frontend Developer"
+            ]
+        },
+        "es": {
+            "localized_name": "Erlyn Valerio Fabian",
+            "localized_name_stylized": " [[Erlyn {{Valerio Fabian}}]]",
+            "status_message_available_for_freelance": "¡Abierto a nuevas oportunidades!",
+            "roles": [
+                "Desarrollador Web Junior",
+                "Desarrollador Frontend"
+            ]
+        }
+    }
+}
